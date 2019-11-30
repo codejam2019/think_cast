@@ -1,13 +1,13 @@
 
 // City table
-CREATE TABLE city(id NUMERIC,name varchar(30));
+CREATE TABLE city(id SERIAL primary key,name varchar(30));
 
 
 // Sensor table
-CREATE TABLE sensor(id NUMERIC,city_id NUMERIC,name varchar(30));
+CREATE TABLE sensor(id SERIAL primary key,city_id NUMERIC,name varchar(30));
 
 // Weather_Record table
-CREATE TABLE weather_record(id NUMERIC,sensor_id NUMERIC,timestamp TIMESTAMP,temperature NUMERIC(10,2),rain_fall NUMERIC(10,2));
+CREATE TABLE weather_record(id SERIAL primary key,sensor_id NUMERIC,timestamp TIMESTAMP,temperature NUMERIC(10,2),rain_fall NUMERIC(10,2));
 
 
 //Insert in city Table 
