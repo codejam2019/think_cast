@@ -16,343 +16,223 @@ CREATE TABLE weather_record(id SERIAL primary key,sensor_id NUMERIC,timestamp TI
 
 //Insert in city Table 
 
-INSERT INTO City (id, name)
-VALUES (1, 'PUNE');
-INSERT INTO City (id, name)
-VALUES (2, 'MUMBAI');
-INSERT INTO City (id, name)
-VALUES (3, 'BANGALORE');
+INSERT INTO City (id, name)VALUES (1, 'PUNE');
+INSERT INTO City (id, name)VALUES (2, 'MUMBAI');
+INSERT INTO City (id, name)VALUES (3, 'BANGALORE');
 
 
 //  Insert in Sensor TABLE
-INSERT INTO Sensor (id, city_id, name)
-VALUES (1, 1, 'PUNE_1');
+INSERT INTO Sensor (id, city_id, name)VALUES (1, 1, 'PUNE_1');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (2, 1, 'PUNE_2');
+INSERT INTO Sensor (id, city_id, name)VALUES (2, 1, 'PUNE_2');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (3, 1, 'PUNE_3');
+INSERT INTO Sensor (id, city_id, name)VALUES (3, 1, 'PUNE_3');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (4, 1, 'PUNE_4');
+INSERT INTO Sensor (id, city_id, name)VALUES (4, 1, 'PUNE_4');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (5, 1, 'PUNE_5');
+INSERT INTO Sensor (id, city_id, name)VALUES (5, 1, 'PUNE_5');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (6, 1, 'PUNE_6');
+INSERT INTO Sensor (id, city_id, name)VALUES (6, 1, 'PUNE_6');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (7, 1, 'PUNE_7');
+INSERT INTO Sensor (id, city_id, name)VALUES (7, 1, 'PUNE_7');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (8, 1, 'PUNE_8');
+INSERT INTO Sensor (id, city_id, name)VALUES (8, 1, 'PUNE_8');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (9, 1, 'PUNE_9');
+INSERT INTO Sensor (id, city_id, name)VALUES (9, 1, 'PUNE_9');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (10, 1, 'PUNE_10');
+INSERT INTO Sensor (id, city_id, name)VALUES (10, 1, 'PUNE_10');
 
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (11, 2, 'MUMBAI_1');
+INSERT INTO Sensor (id, city_id, name)VALUES (11, 2, 'MUMBAI_1');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (12, 2, 'MUMBAI_2');
+INSERT INTO Sensor (id, city_id, nameVALUES (12, 2, 'MUMBAI_2');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (13, 2, 'MUMBAI_3');
+INSERT INTO Sensor (id, city_id, name)VALUES (13, 2, 'MUMBAI_3');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (14, 2, 'MUMBAI_4');
+INSERT INTO Sensor (id, city_id, name)VALUES (14, 2, 'MUMBAI_4');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (15, 2, 'MUMBAI_5');
+INSERT INTO Sensor (id, city_id, name)VALUES (15, 2, 'MUMBAI_5');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (16, 2, 'MUMBAI_6');
+INSERT INTO Sensor (id, city_id, name)VALUES (16, 2, 'MUMBAI_6');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (17, 2, 'MUMBAI_7');
+INSERT INTO Sensor (id, city_id, name)VALUES (17, 2, 'MUMBAI_7');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (18, 2, 'MUMBAI_8');
+INSERT INTO Sensor (id, city_id, name)VALUES (18, 2, 'MUMBAI_8');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (19, 2, 'MUMBAI_9');
+INSERT INTO Sensor (id, city_id, name)VALUES (19, 2, 'MUMBAI_9');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (20, 2, 'MUMBAI_10');
+INSERT INTO Sensor (id, city_id, name)VALUES (20, 2, 'MUMBAI_10');
 
 
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (21, 3, 'BANGALORE_21');
+INSERT INTO Sensor (id, city_id, name)VALUES (21, 3, 'BANGALORE_21');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (22, 3, 'BANGALORE_22');
+INSERT INTO Sensor (id, city_id, name)VALUES (22, 3, 'BANGALORE_22');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (23, 3, 'BANGALORE_23');
+INSERT INTO Sensor (id, city_id, name)VALUES (23, 3, 'BANGALORE_23');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (24, 3, 'BANGALORE_24');
+INSERT INTO Sensor (id, city_id, name)VALUES (24, 3, 'BANGALORE_24');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (25, 3, 'BANGALORE_25');
+INSERT INTO Sensor (id, city_id, name)VALUES (25, 3, 'BANGALORE_25');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (26, 3, 'BANGALORE_26');
+INSERT INTO Sensor (id, city_id, name)VALUES (26, 3, 'BANGALORE_26');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (27, 3, 'BANGALORE_27');
+INSERT INTO Sensor (id, city_id, name)VALUES (27, 3, 'BANGALORE_27');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (28, 3, 'BANGALORE_28');
+INSERT INTO Sensor (id, city_id, name)VALUES (28, 3, 'BANGALORE_28');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (29, 3, 'BANGALORE_29');
+INSERT INTO Sensor (id, city_id, name)VALUES (29, 3, 'BANGALORE_29');
 
-INSERT INTO Sensor (id, city_id, name)
-VALUES (30, 3, 'BANGALORE_30');
+INSERT INTO Sensor (id, city_id, name)VALUES (30, 3, 'BANGALORE_30');
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (1, 1, '2018-11-01 03:14:07', 21.3, 167);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (1, 1, '2018-11-01 03:14:07', 21.3, 167);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (2, 1, '2019-11-15 03:10:07', 23.3, 167);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (2, 1, '2019-11-15 03:10:07', 23.3, 167);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (3, 1, '2019-11-30 10:00:00', 27.3, 167);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (3, 1, '2019-11-30 10:00:00', 27.3, 167);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (4, 1, '2019-11-30 04:00:00', 29.3, 137);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (4, 1, '2019-11-30 04:00:00', 29.3, 137);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (5, 2, '2018-11-01 03:14:07', 23.3, 169);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (5, 2, '2018-11-01 03:14:07', 23.3, 169);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (6, 2, '2019-11-15 03:10:07', 27.3, 127);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (6, 2, '2019-11-15 03:10:07', 27.3, 127);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (7, 2, '2019-11-30 10:00:00', 22.3, 167);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (7, 2, '2019-11-30 10:00:00', 22.3, 167);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (8, 2, '2019-11-30 04:00:00', 29.3, 197);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (8, 2, '2019-11-30 04:00:00', 29.3, 197);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (9, 3, '2018-11-01 03:14:07', 31.3, 117);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (9, 3, '2018-11-01 03:14:07', 31.3, 117);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (10, 3, '2019-11-15 03:10:07', 29.3, 127);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (11, 3, '2019-11-30 10:00:00', 22.3, 137);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (10, 3, '2019-11-15 03:10:07', 29.3, 127);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (12, 3, '2019-11-30 04:00:00', 32.3, 167);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (11, 3, '2019-11-30 10:00:00', 22.3, 137);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (12, 3, '2019-11-30 04:00:00', 32.3, 167);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (13, 4, '2018-11-01 03:14:07', 28.3, 156);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (14, 4, '2019-11-15 03:10:07', 22.3, 219);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (15, 4, '2019-11-30 10:00:00', 28.3, 234);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (13, 4, '2018-11-01 03:14:07', 28.3, 156);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (16, 4, '2019-11-30 04:00:00', 21.3, 165);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (14, 4, '2019-11-15 03:10:07', 22.3, 219);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (17, 5, '2018-11-01 03:14:07', 24.3, 126);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (15, 4, '2019-11-30 10:00:00', 28.3, 234);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (18, 5, '2019-11-15 03:10:07', 22.3, 129);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (19, 5, '2019-11-30 10:00:00', 28.3, 184);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (16, 4, '2019-11-30 04:00:00', 21.3, 165);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (20, 5, '2019-11-30 04:00:00', 21.3, 195);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (17, 5, '2018-11-01 03:14:07', 24.3, 126);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (21, 6, '2018-11-01 03:14:07', 24.3, 121);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (22, 6, '2019-11-15 03:10:07', 22.3, 122);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (18, 5, '2019-11-15 03:10:07', 22.3, 129);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (23, 6, '2019-11-30 10:00:00', 28.3, 187);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (19, 5, '2019-11-30 10:00:00', 28.3, 184);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (24, 6 '2019-11-30 04:00:00', 21.3, 197);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (20, 5, '2019-11-30 04:00:00', 21.3, 195);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (21, 6, '2018-11-01 03:14:07', 24.3, 121);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (25, 7, '2018-11-01 03:14:07', 24.3, 136);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (26, 7, '2019-11-15 03:10:07', 22.3, 139);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (22, 6, '2019-11-15 03:10:07', 22.3, 122);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (27, 7, '2019-11-30 10:00:00', 28.3, 144);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (23, 6, '2019-11-30 10:00:00', 28.3, 187);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (28, 7, '2019-11-30 04:00:00', 21.3, 155);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (24, 6 '2019-11-30 04:00:00', 21.3, 197);
 
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (29, 8, '2018-11-01 03:14:07', 24.3, 166);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (30, 8, '2019-11-15 03:10:07', 22.3, 179);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (25, 7, '2018-11-01 03:14:07', 24.3, 136);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (31, 8, '2019-11-30 10:00:00', 28.3, 194);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (32, 8, '2019-11-30 04:00:00', 21.3, 115);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (26, 7, '2019-11-15 03:10:07', 22.3, 139);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (27, 7, '2019-11-30 10:00:00', 28.3, 144);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (28, 7, '2019-11-30 04:00:00', 21.3, 155);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (33, 9, '2018-11-01 03:14:07', 24.3, 126);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (34, 9, '2019-11-15 03:10:07', 22.3, 149);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (35, 9, '2019-11-30 10:00:00', 28.3, 184);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (36, 9, '2019-11-30 04:00:00', 21.3, 195);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (29, 8, '2018-11-01 03:14:07', 24.3, 166);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (30, 8, '2019-11-15 03:10:07', 22.3, 179);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (31, 8, '2019-11-30 10:00:00', 28.3, 194);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (37, 10, '2018-11-01 03:14:07', 24.3, 126);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (32, 8, '2019-11-30 04:00:00', 21.3, 115);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (38, 10, '2019-11-15 03:10:07', 22.3, 139);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (39, 10, '2019-11-30 10:00:00', 28.3, 134);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (40, 10, '2019-11-30 04:00:00', 21.3, 195);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (33, 9, '2018-11-01 03:14:07', 24.3, 126);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (34, 9, '2019-11-15 03:10:07', 22.3, 149);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (41, 11, '2018-11-01 03:14:07', 24.3, 126);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (35, 9, '2019-11-30 10:00:00', 28.3, 184);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (42, 11, '2019-11-15 03:10:07', 22.3, 159);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (43, 11, '2019-11-30 10:00:00', 28.3, 174);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (36, 9, '2019-11-30 04:00:00', 21.3, 195);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (44, 11, '2019-11-30 04:00:00', 21.3, 145);
 
 
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (45, 12, '2018-11-01 03:14:07', 34.3, 126);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (46, 12, '2019-11-15 03:10:07', 32.3, 129);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (37, 10, '2018-11-01 03:14:07', 24.3, 126);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (47, 12, '2019-11-30 10:00:00', 29.3, 214);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (48, 12, '2019-11-30 04:00:00', 21.3, 195);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (38, 10, '2019-11-15 03:10:07', 22.3, 139);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (39, 10, '2019-11-30 10:00:00', 28.3, 134);
 
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (40, 10, '2019-11-30 04:00:00', 21.3, 195);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (49, 13, '2018-11-01 03:14:07', 21.3, 126);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (50, 13, '2019-11-15 03:10:07', 22.3, 219);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (51, 13, '2019-11-30 10:00:00', 25.3, 184);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (52, 13, '2019-11-30 04:00:00', 21.3, 235);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (41, 11, '2018-11-01 03:14:07', 24.3, 126);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (53, 14, '2018-11-01 03:14:07', 34.3, 126);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (42, 11, '2019-11-15 03:10:07', 22.3, 159);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (54, 14, '2019-11-15 03:10:07', 32.3, 129);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (43, 11, '2019-11-30 10:00:00', 28.3, 174);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (55, 14, '2019-11-30 10:00:00', 48.3, 544);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (56, 14, '2019-11-30 04:00:00', 41.3, 195);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (44, 11, '2019-11-30 04:00:00', 21.3, 145);
 
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (57, 15, '2018-11-01 03:14:07', 44.3, 216);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (45, 12, '2018-11-01 03:14:07', 34.3, 126);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (58, 15, '2019-11-15 03:10:07', 32.3, 200);
 
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (59, 15, '2019-11-30 10:00:00', 40.3, 204);
 
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (46, 12, '2019-11-15 03:10:07', 32.3, 129);
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (47, 12, '2019-11-30 10:00:00', 29.3, 214);
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (48, 12, '2019-11-30 04:00:00', 21.3, 195);
-
-
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (49, 13, '2018-11-01 03:14:07', 21.3, 126);
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (50, 13, '2019-11-15 03:10:07', 22.3, 219);
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (51, 13, '2019-11-30 10:00:00', 25.3, 184);
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (52, 13, '2019-11-30 04:00:00', 21.3, 235);
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (53, 14, '2018-11-01 03:14:07', 34.3, 126);
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (54, 14, '2019-11-15 03:10:07', 32.3, 129);
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (55, 14, '2019-11-30 10:00:00', 48.3, 544);
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (56, 14, '2019-11-30 04:00:00', 41.3, 195);
-
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (57, 15, '2018-11-01 03:14:07', 44.3, 216);
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (58, 15, '2019-11-15 03:10:07', 32.3, 200);
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (59, 15, '2019-11-30 10:00:00', 40.3, 204);
-
-
-INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)
-VALUES (60, 15, '2019-11-30 04:00:00', 31.3, 305);
+INSERT INTO weather_record (id, sensor_id, timestamp, temperature, rain_fall)VALUES (60, 15, '2019-11-30 04:00:00', 31.3, 305);
