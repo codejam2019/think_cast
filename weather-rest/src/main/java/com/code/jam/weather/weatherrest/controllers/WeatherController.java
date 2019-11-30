@@ -2,6 +2,7 @@ package com.code.jam.weather.weatherrest.controllers;
 
 import com.code.jam.weather.weatherrest.controllers.model.Sample;
 import com.code.jam.weather.weatherrest.controllers.model.SensorWeatherRecord;
+import com.code.jam.weather.weatherrest.controllers.model.WeatherRecord;
 import com.code.jam.weather.weatherrest.repositories.SampleRepository;
 import com.code.jam.weather.weatherrest.services.SensorWeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,8 +44,14 @@ public class WeatherController {
     @PostMapping("/cities/{cityName}/sensors/{sensorName}")
     public void saveRecord(@PathVariable("cityName") final String cityName,
                            @PathVariable("sensorName") final String sensorName,
-                           @RequestBody SensorWeatherRecord record) {
-        sensorWeatherService.save(record);
+                           @RequestBody WeatherRecord record) {
+        final SensorWeatherRecord weatherRecord = new SensorWeatherRecord();
+        weatherRecord.setRainFall(record.getRainFall());
+        weatherRecord.setTemperature(record.getTemperature());
+        weatherRecord.setTimestamp(record.getTimestamp());
+        weatherRecord.setCityName(cityName);
+        weatherRecord.setSensorName(sensorName);
+        sensorWeatherService.save(weatherRecord);
     }
 
     @GetMapping("/samples/{id}")
