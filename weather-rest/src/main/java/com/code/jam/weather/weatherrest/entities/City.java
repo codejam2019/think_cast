@@ -1,4 +1,4 @@
-package com.code.jam.wather.weatherrest.entities;
+package com.code.jam.weather.weatherrest.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,9 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity()
-@Table(name = "sample")
-public class Sample {
+@Entity
+@Table(name = "city")
+public class City {
 
     @Id
     @Column(name = "id")
@@ -18,9 +18,6 @@ public class Sample {
 
     @Column(name = "name")
     private String name;
-
-    @Column(name = "age")
-    private Long age;
 
     public Long getId() {
         return id;
@@ -36,13 +33,5 @@ public class Sample {
 
     public void setName(final String name) {
         this.name = name;
-    }
-
-    public Long getAge() {
-        return age;
-    }
-
-    public void setAge(final Long age) {
-        this.age = age;
     }
 }
