@@ -10,4 +10,5 @@ public interface SensorWeatherService {
     void save(SensorWeatherRecord record);
     List<WeatherRecord> findForCity(String city, Date from, Date to);
     List<WeatherRecord> findForSensor(String sensor, Date from, Date to);
+    String findHottestCity(Date from, Date to);
 }

@@ -69,6 +69,17 @@ public class SensorWeatherServiceImpl implements SensorWeatherService {
         return records.stream().map(this::adapt).collect(Collectors.toList());
     }
 
+    @Override
+    public String findHottestCity(final Date from, Date to) {
+        if (from != null) {
+            if (to == null) {
+                to = new Date();
+            }
+            return weatherRecordRepository.findHottestCities(from, to).get(0);
+        }
+        return weatherRecordRepository.findHottestCities().get(0);
+    }
+
     private com.code.jam.weather.weatherrest.controllers.model.WeatherRecord adapt(final WeatherRecord r) {
         final com.code.jam.weather.weatherrest.controllers.model.WeatherRecord model = new com.code.jam.weather.weatherrest.controllers.model.WeatherRecord();
         model.setTimestamp(r.getTimestamp());
