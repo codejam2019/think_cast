@@ -48,8 +48,9 @@ public class SensorWeatherServiceImpl implements SensorWeatherService {
                 to = new Date();
             }
             records.addAll(weatherRecordRepository.findByCity(city, from, to));
+        } else {
+            records.addAll(weatherRecordRepository.findByCity(city));
         }
-        records.addAll(weatherRecordRepository.findByCity(city));
         return records.stream().map(this::adapt).collect(Collectors.toList());
     }
 
@@ -62,8 +63,9 @@ public class SensorWeatherServiceImpl implements SensorWeatherService {
                 to = new Date();
             }
             records.addAll(weatherRecordRepository.findBySensor(sensor, from, to));
+        } else {
+            records.addAll(weatherRecordRepository.findBySensor(sensor));
         }
-        records.addAll(weatherRecordRepository.findBySensor(sensor));
         return records.stream().map(this::adapt).collect(Collectors.toList());
     }
 
