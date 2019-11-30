@@ -53,4 +53,17 @@ public interface WeatherRecordRepository extends JpaRepository<WeatherRecord, Lo
             " WHERE r.timestamp >= :fromDate AND r.timestamp <= :toDate" +
             " GROUP BY c.name ORDER BY AVG(r.temperature) desc ")
     List<String> findHottestCities(Date from, Date to);
+
+    @Query("SELECT c.name, AVG(r.temperature) from WeatherRecord r " +
+            " JOIN Sensor s on r.sensorId = s.id " +
+            " JOIN City c on c.id = s.cityId" +
+            " GROUP BY c.name ORDER BY AVG(r.temperature) ")
+    List<String> findColdestCities();
+
+    @Query("SELECT c.name, AVG(r.temperature) from WeatherRecord r " +
+            " JOIN Sensor s on r.sensorId = s.id " +
+            " JOIN City c on c.id = s.cityId" +
+            " WHERE r.timestamp >= :fromDate AND r.timestamp <= :toDate" +
+            " GROUP BY c.name ORDER BY AVG(r.temperature) ")
+    List<String> findColdestCities(Date from, Date to);
 }

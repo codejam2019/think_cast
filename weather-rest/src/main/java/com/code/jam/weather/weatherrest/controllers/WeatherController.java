@@ -80,4 +80,12 @@ public class WeatherController {
         return sensorWeatherService.findHottestCity(from, to);
     }
 
+    @GetMapping("/cities/coldest/city")
+    public String coldestCity(@RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") final Date from,
+                              @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") final Date to) {
+        return sensorWeatherService.findColdestCity(from, to);
+    }
+
+
+
 }
