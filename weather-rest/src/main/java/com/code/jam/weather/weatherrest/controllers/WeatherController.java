@@ -4,14 +4,18 @@ import com.code.jam.weather.weatherrest.controllers.model.Sample;
 import com.code.jam.weather.weatherrest.controllers.model.SensorWeatherRecord;
 import com.code.jam.weather.weatherrest.controllers.model.WeatherRecord;
 import com.code.jam.weather.weatherrest.repositories.SampleRepository;
+import com.code.jam.weather.weatherrest.repositories.WeatherRecordRepository;
 import com.code.jam.weather.weatherrest.services.SensorWeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,12 +24,14 @@ public class WeatherController {
 
     private final SampleRepository sampleRepository;
     private final SensorWeatherService sensorWeatherService;
+    private final WeatherRecordRepository weatherRecordRepository;
 
     @Autowired
     public WeatherController(final SampleRepository sampleRepository,
-                             final SensorWeatherService sensorWeatherService) {
+                             final SensorWeatherService sensorWeatherService, final WeatherRecordRepository weatherRecordRepository) {
         this.sampleRepository = sampleRepository;
         this.sensorWeatherService = sensorWeatherService;
+        this.weatherRecordRepository = weatherRecordRepository;
     }
 
     @GetMapping("/ping")
@@ -53,6 +59,19 @@ public class WeatherController {
         weatherRecord.setSensorName(sensorName);
         sensorWeatherService.save(weatherRecord);
     }
-    
+
+    @GetMapping("/records/cities/{cityName}")
+    public List<WeatherRecord> recordsForCity(@PathVariable("cityName")final String city,
+                          @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") final Date from,
+                        @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") final Date to) {
+        return sensorWeatherService.findForCity(city, from, to);
+    }
+
+    @GetMapping("/records/sensors/{sensorName}")
+    public List<WeatherRecord> recordsForSensor(@PathVariable("sensorName")final String sensor,
+                                              @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") final Date from,
+                                              @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") final Date to) {
+        return sensorWeatherService.findForSensor(sensor, from, to);
+    }
 
 }
