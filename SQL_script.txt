@@ -1,0 +1,31 @@
+
+
+CREATE TABLE City
+(
+CITY_ID int(3),
+CITY_NAME varchar(30)
+);
+
+
+
+CREATE TABLE Sensor
+(
+SENSOR_ID int(3),
+CITY_ID int(3),
+SENSOR_NAME varchar(30)
+)
+
+CREATE TABLE Weather_Record
+(
+WEATHER_ID int(3),
+SENSOR_ID int(3),
+TIME_STAMP TIMESTAMP
+TEMPERATURE varchar(10),
+RAINFALL varchar(10)
+)
+
+
+Use caes : 
+
+
+
