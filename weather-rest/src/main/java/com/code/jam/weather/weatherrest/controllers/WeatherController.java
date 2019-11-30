@@ -53,11 +53,6 @@ public class WeatherController {
         weatherRecord.setSensorName(sensorName);
         sensorWeatherService.save(weatherRecord);
     }
-
-    @GetMapping("/samples/{id}")
-    public Sample getSample(@PathVariable final Long id) {
-        final com.code.jam.weather.weatherrest.entities.Sample entity = sampleRepository.getOne(id);
-        return new Sample(entity.getName(), entity.getAge());
-    }
+    
 
 }
