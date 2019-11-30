@@ -10,7 +10,7 @@
 
 const axios = require('axios')
 
-axios.post('https://localhost:3000', JSON.stringify([
+axios.post('https://10.4.127.38:3000', JSON.stringify([
 {"city" : "CITY1", "sensor" : "SENSOR1", "temperature" : "25", "rainfall" : "20", "timestamp" : "2012-04-30T18:25:13"},
 {"city" : "CITY1", "sensor" : "SENSOR1", "temperature" : "30", "rainfall" : "12", "timestamp" : "2012-04-30T18:27:43"},
 {"city" : "CITY2", "sensor" : "SENSOR1", "temperature" : "35", "rainfall" : "11", "timestamp" : "2012-04-30T18:23:43"},
