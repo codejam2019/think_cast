@@ -1,133 +1,133 @@
 
 // City table
-CREATE TABLE City
+CREATE TABLE city
 (
-CITY_ID int(3),
-CITY_NAME varchar(30)
+id int(3),
+name varchar(30)
 );
 
 
 // Sensor table
-CREATE TABLE Sensor
+CREATE TABLE sensor
 (
-SENSOR_ID int(3),
-CITY_ID int(3),
-SENSOR_NAME varchar(30)
+id int(3),
+city_id int(3),
+name varchar(30)
 )
 
 // Weather_Record table
-CREATE TABLE Weather_Record
+CREATE TABLE weather_record
 (
-WEATHER_ID int(3),
-SENSOR_ID int(3),
-TIME_STAMP TIMESTAMP
-TEMPERATURE varchar(10),
-RAINFALL varchar(10)
+id int(3),
+sensor_id int(3),
+timestamp TIMESTAMP
+temperature NUMERIC(10,2),
+rain_fall NUMERIC(10,2)
 )
 
 
 //Insert in city Table 
 
-INSERT INTO City (CITY_ID, CITY_NAME)
+INSERT INTO City (id, name)
 VALUES (1, 'PUNE');
-INSERT INTO City (CITY_ID, CITY_NAME)
+INSERT INTO City (id, name)
 VALUES (2, 'MUMBAI');
-INSERT INTO City (CITY_ID, CITY_NAME)
+INSERT INTO City (id, name)
 VALUES (3, 'BANGALORE');
 
 
 //  Insert in Sensor TABLE
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (1, 1, 'PUNE_1');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (2, 1, 'PUNE_2');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (3, 1, 'PUNE_3');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (4, 1, 'PUNE_4');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (5, 1, 'PUNE_5');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (6, 1, 'PUNE_6');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (7, 1, 'PUNE_7');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (8, 1, 'PUNE_8');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (9, 1, 'PUNE_9');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (10, 1, 'PUNE_10');
 
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (11, 2, 'MUMBAI_1');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (12, 2, 'MUMBAI_2');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (13, 2, 'MUMBAI_3');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (14, 2, 'MUMBAI_4');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (15, 2, 'MUMBAI_5');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (16, 2, 'MUMBAI_6');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (17, 2, 'MUMBAI_7');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (18, 2, 'MUMBAI_8');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (19, 2, 'MUMBAI_9');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (20, 2, 'MUMBAI_10');
 
 
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (21, 1, 'BANGALORE_21');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (22, 1, 'BANGALORE_22');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (23, 1, 'BANGALORE_23');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (24, 1, 'BANGALORE_24');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (25, 1, 'BANGALORE_25');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (26, 1, 'BANGALORE_26');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (27, 1, 'BANGALORE_27');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (28, 1, 'BANGALORE_28');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (29, 1, 'BANGALORE_29');
 
-INSERT INTO Sensor (SENSOR_ID, CITY_ID, SENSOR_NAME)
+INSERT INTO Sensor (id, city_id, name)
 VALUES (30, 1, 'BANGALORE_30');
 
 
