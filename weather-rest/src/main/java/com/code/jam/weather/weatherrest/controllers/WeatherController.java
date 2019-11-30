@@ -74,4 +74,10 @@ public class WeatherController {
         return sensorWeatherService.findForSensor(sensor, from, to);
     }
 
+    @GetMapping("/cities/hottest/city")
+    public String hottestCity(@RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") final Date from,
+                                              @RequestParam(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") final Date to) {
+        return sensorWeatherService.findHottestCity(from, to);
+    }
+
 }
