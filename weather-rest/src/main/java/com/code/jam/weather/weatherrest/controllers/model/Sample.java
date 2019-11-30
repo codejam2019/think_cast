@@ -1,4 +1,4 @@
-package com.code.jam.wather.weatherrest.controllers.model;
+package com.code.jam.weather.weatherrest.controllers.model;
 
 import lombok.Data;
 

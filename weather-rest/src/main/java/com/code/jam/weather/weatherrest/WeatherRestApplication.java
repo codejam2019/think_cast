@@ -1,4 +1,4 @@
-package com.code.jam.wather.weatherrest;
+package com.code.jam.weather.weatherrest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories(
-        basePackages = "com.code.jam.wather.weatherrest.repositories"
+        basePackages = "com.code.jam.weather.weatherrest.repositories"
 )
 public class WeatherRestApplication {
 

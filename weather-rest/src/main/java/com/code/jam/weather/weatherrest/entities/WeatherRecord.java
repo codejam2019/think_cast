@@ -1,4 +1,4 @@
-package com.code.jam.wather.weatherrest.entities;
+package com.code.jam.weather.weatherrest.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
