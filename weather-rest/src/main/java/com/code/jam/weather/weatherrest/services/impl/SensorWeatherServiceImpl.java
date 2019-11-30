@@ -11,7 +11,11 @@ import com.code.jam.weather.weatherrest.services.SensorWeatherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @Component
 public class SensorWeatherServiceImpl implements SensorWeatherService {
@@ -32,6 +36,46 @@ public class SensorWeatherServiceImpl implements SensorWeatherService {
     public void save(final SensorWeatherRecord record) {
         final City city = saveCity(record);
         final Sensor sensor = saveSensor(record, city);
+        saveRecord(record, sensor);
+    }
+
+    @Override
+    public List<com.code.jam.weather.weatherrest.controllers.model.WeatherRecord> findForCity(final String city,
+                                      final Date from, Date to) {
+        final List<WeatherRecord> records = new ArrayList<>();
+        if (from != null) {
+            if (to == null) {
+                to = new Date();
+            }
+            records.addAll(weatherRecordRepository.findByCity(city, from, to));
+        }
+        records.addAll(weatherRecordRepository.findByCity(city));
+        return records.stream().map(this::adapt).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<com.code.jam.weather.weatherrest.controllers.model.WeatherRecord> findForSensor(final String sensor,
+                                                                                              final Date from, Date to) {
+        final List<WeatherRecord> records = new ArrayList<>();
+        if (from != null) {
+            if (to == null) {
+                to = new Date();
+            }
+            records.addAll(weatherRecordRepository.findBySensor(sensor, from, to));
+        }
+        records.addAll(weatherRecordRepository.findBySensor(sensor));
+        return records.stream().map(this::adapt).collect(Collectors.toList());
+    }
+
+    private com.code.jam.weather.weatherrest.controllers.model.WeatherRecord adapt(final WeatherRecord r) {
+        final com.code.jam.weather.weatherrest.controllers.model.WeatherRecord model = new com.code.jam.weather.weatherrest.controllers.model.WeatherRecord();
+        model.setTimestamp(r.getTimestamp());
+        model.setTemperature(r.getTemperature());
+        model.setRainFall(r.getRainFall());
+        return model;
+    }
+
+    private void saveRecord(final SensorWeatherRecord record, final Sensor sensor) {
         final WeatherRecord weatherRecord = new WeatherRecord();
         weatherRecord.setSensorId(sensor.getId());
         weatherRecord.setRainFall(record.getRainFall());
